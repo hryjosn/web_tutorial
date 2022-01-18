@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Example</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="text">Hi I am Henry</h1>
+        <button onclick="changeLanguage()">Chang the language</button>
+    </body>
+</html>
+<script>
+  function changeLanguage() {
+    const text = document.getElementById("text");
+    text.innerHTML="Hi 我是亨利";
+    text.classList.add("rotate");
+  }
+</script>
