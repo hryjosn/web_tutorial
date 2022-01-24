@@ -9,9 +9,8 @@
     width:100%;
   }
 
-  .rotate {
-    animation: rotation 5s infinite linear;
-    color:darkblue;
+  .span-text {
+    background-color: pink;
   }
 </style>
 <html lang="en">
@@ -23,15 +22,14 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1 id="text">Hi I am Henry</h1>
-        <button onclick="changeLanguage()">Chang the language</button>
+        <div id="app"></div>
     </body>
 </html>
 <script>
- 
-  function changeLanguage() {
-    const text = document.getElementById("text");
-    text.innerHTML="你好 我是亨利";
-    text.classList.add("rotate");
-  }
+ const span = document.createElement('span')
+ span.innerHTML = "Hi I create a span"
+ span.className = "span-text"
+ const rootApp = document.getElementById("app")
+ rootApp.append(span)
+
 </script>
