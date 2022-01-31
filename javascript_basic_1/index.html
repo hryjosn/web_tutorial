@@ -1,4 +1,25 @@
 <!DOCTYPE html>
+<style>
+  html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .content{
+    flex:1;
+    width: 100%;
+  }
+</style>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,10 +28,22 @@
 
     <!-- styles -->
     <link rel="stylesheet" href="styles.css" />
-    <script src="app.js"></script>
   </head>
   <body>
-    <h1>color flipper</h1>
+    <nav class="header">
+      <div class="nav-center">
+        <h4>color flipper</h4>
+        <ul class="nav-links">
+          <li><a href="index.html">simple</a></li>
+          <li><a href="hex.html">hex</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="content" class="content">
+      <button id="clickBtn">Click Me!</button>
+      
+    </div>
     <!-- javascript -->
   </body>
 </html>
+<script src="app.js"></script>
