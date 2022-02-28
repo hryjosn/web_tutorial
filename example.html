@@ -1,39 +1,32 @@
-<html>
+<!DOCTYPE html>
+<style>
+    .box {
+        width: 100px;
+        height: 200px;
+        text-align: center;
+        color: white;
+    }
+
+    .green {
+        background-color: green;
+    }
+
+    .tomato {
+        background-color: tomato;
+    }
+</style>
+<html lang="en">
+<!-- <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head> -->
 
 <body>
-    <div class="container1" id="container1">
-        <h1 onclick="expand()">Lorem ipsum</h1>
-        <div id="container1p">
-            <p class="italic">Lorem ipsum dolor sit amet</p>
-        </div>
-    </div>
+    <div class="box green"> green </div>
+    <div class="box tomato"> tomato </div>
+
 </body>
 
 </html>
-<style>
-    .container1 {
-        background-color: white;
-        margin-left: 50px;
-        margin-right: 50px;
-        transition: all 2s ease;
-        overflow: hidden;
-        height: 100px;
-    }
-
-    .container1 h1 {
-        font-size: 400%;
-        line-height: 40px;
-    }
-
-    #container1p {
-        display: none;
-        transition: all 2s ease;
-    }
-</style>
-<script type="text/javascript">
-    function expand() {
-        document.getElementById("container1").style.height = "280px";
-        document.getElementById("container1p").style.display = "block";
-    }
-
-</script>
